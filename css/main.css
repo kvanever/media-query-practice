@@ -92,73 +92,43 @@ nav a:hover {
 Media Queries
 *************************/
 
-@media only screen and (min-width: 480px) {
-
-  nav a {
+@media screen and (min-width: 600px) {
+  h1.title {
     float: left;
-    width: 30%;
-    margin: 0 0 0 5%;
-    padding: 25px 1%;
-    margin-bottom: 0;
+    width: 40%;
   }
 
-  nav li:first-child a {
-    margin-left: 0;
-  }
-
-  nav li:last-child a {
-    margin-right: 0;
-  }
-
-}
-
-@media only screen and (min-width: 768px),
-       only screen and (min-width: 700px) and (orientation: landscape) {
-
-  .title {
-    float: left;
-    font-size: 1.4em;
-  }
-
-  nav {
+  nav ul {
     float: right;
     width: 60%;
   }
 
-  nav a {
-    padding: 15px 1%;
+  nav ul li {
+    display: inline-block;
+    width: 25%;
+    margin: 1.66%;
   }
+}
 
+@media screen and (min-width: 960px) {
   .main article {
     float: left;
-    width: 57%;
+    width: 55%;
   }
 
   .main aside {
     float: right;
-    width: 38%;
+    width: 40%;
   }
-
 }
 
-@media only screen and (min-width: 1140px) {
-
-  .wrapper {
-    width: 1026px;
-    margin: 0 auto;
+@media screen and (min-width: 1800px) {
+  body {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  .title {
-    font-size: 2em;
-  }
-
-  nav a {
-    padding: 25px 1%;
-  }
-
 }
-
-
 /*************************
 Clearfix
 *************************/
